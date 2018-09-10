@@ -1,19 +1,201 @@
----
-layout: main
----
-{% for post in paginator.posts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Dev Blog by jgoodman8</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Dev Blog by jgoodman8" property="og:site_name">
+  
+    <meta content="Dev Blog by jgoodman8" property="og:title">
+  
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/" property="og:url">
+  
+  
+  
+    <meta content="http://localhost:4000/blog/assets/img/profile-pic.jpg" property="og:image">
+  
+  
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Dev Blog by jgoodman8">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/">
+  
+  
+    <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/blog/assets/img/profile-pic.jpg">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/blog/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/blog/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/blog/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/blog/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/blog/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/blog/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="top-bar theme-bg-primary-darken">
+
+  <nav class="navbar">
+
+    <!--Social list-->
+    <ul class="social-list list-inline mb-0">
+      <li class="list-inline-item">
+        <a class="icon-white" href="https://twitter.com/jgoodman_8">
+          <svg class="svg-inline--fa fa-twitter fa-w-16 fa-fw" aria-hidden="true" data-prefix="fab"
+               data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+               data-fa-i2svg="">
+            <path fill="currentColor"
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+          </svg><!-- <i class="fab fa-twitter fa-fw"></i> -->
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="icon-white" href="https://www.linkedin.com/in/jguzmanfd">
+            <svg class="svg-inline--fa fa-linkedin-in fa-w-14 fa-fw" aria-hidden="true" data-prefix="fab"
+                 data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                 data-fa-i2svg="">
+                <path fill="currentColor"
+                      d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path>
+            </svg><!-- <i class="fab fa-linkedin-in fa-fw"></i> -->
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="icon-white" href="https://github.com/jgoodman8">
+          <svg class="svg-inline--fa fa-github-alt fa-w-15 fa-fw" aria-hidden="true" data-prefix="fab"
+               data-icon="github-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"
+               data-fa-i2svg="">
+            <path fill="currentColor"
+                  d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path>
+          </svg><!-- <i class="fab fa-github-alt fa-fw"></i> -->
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="icon-white" href="https://stackoverflow.com/users/6145298/jgoodman8">
+          <svg class="svg-inline--fa fa-stack-overflow fa-w-12 fa-fw" aria-hidden="true" data-prefix="fab"
+               data-icon="stack-overflow" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+               data-fa-i2svg="">
+            <path fill="currentColor"
+                  d="M293.7 300l-181.2-84.5 16.7-36.5 181.3 84.7-16.8 36.3zm48-76L188.2 95.7l-25.5 30.8 153.5 128.3 25.5-30.8zm39.6-31.7L262 32l-32 24 119.3 160.3 32-24zM290.7 311L95 269.7 86.8 309l195.7 41 8.2-39zm31.6 129H42.7V320h-40v160h359.5V320h-40v120zm-39.8-80h-200v39.7h200V360z"></path>
+          </svg><!-- <i class="fab fa-stack-overflow fa-fw"></i> -->
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="icon-white" href="https://bitbucket.org/kikoOne">
+          <svg aria-hidden="true" data-prefix="fab" data-icon="bitbucket"
+               class="svg-inline--fa fa-bitbucket fa-w-16" role="img"
+               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                  d="M23.1 32C14.2 31.9 7 38.9 6.9 47.8c0 .9.1 1.8.2 2.8L74.9 462c1.7 10.4 10.7 18 21.2 18.1h325.1c7.9.1 14.7-5.6 16-13.4l67.8-416c1.4-8.7-4.5-16.9-13.2-18.3-.9-.1-1.8-.2-2.8-.2L23.1 32zm285.3 297.3H204.6l-28.1-146.8h157l-25.1 146.8z"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!--Mobile menu button-->
+    <a class="navbar-toggler">
+      <svg id="toggle-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="white"/>
+      </svg>
+    </a>
+
+    <!--Menu items-->
+    <div id="nav-items" class="navbar-collapse text-uppercase" style="">
+      <ul class="navbar-nav ml-lg-auto">
+        <li class="nav-item active mr-lg-3">
+          <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mr-lg-3">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item mr-lg-3">
+          <a class="nav-link" href="resume.pdf">Resume</a>
+        </li>
+        <li class="nav-item mr-lg-3">
+          <a class="nav-link" href="mailto: jguzmanfd@gmail.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+<div class="content-box clearfix">
+  
 <article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
+  
+    <a class="post-thumbnail" style="background-image: url(/blog/assets/img/i-rest.jpg)" href="/blog/how-i-rest-from-work/"></a>
+  
   <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+    <h2 class="post-title"><a href="/blog/how-i-rest-from-work/">How I Rest From Work</a></h2>
+    <p>Fam locavore snackwave bushwick +1 sartorial. Selfies portland knausgaard synth. Pop-up art party marfa deep...</p>
+    <span class="post-date">2017, Sep 12&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">4 minute read</span>
   </div>
 </article>
-{% endfor %}
 
-{% include pagination.html %}
+
+<div class="container">
+  <nav class="pagination" role="pagination">
+    <ul>
+      
+
+      <p><span class="page-number">Page 1 of 1</span></p>
+
+      
+    </ul>
+  </nav>
+</div>
+
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
