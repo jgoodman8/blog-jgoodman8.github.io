@@ -22,7 +22,7 @@ about-author: AI enthusiast, ML skills and FullStack capabilities. # add descrip
 discus-identifier: https-jgoodman8-github-io # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-125589531-1 # Google Analytics
 
 # Build Settings
 markdown: kramdown
