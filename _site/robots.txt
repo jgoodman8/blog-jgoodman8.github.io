@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/dev-blog/sitemap.xml
+Sitemap: /dev-blog/sitemap.xml

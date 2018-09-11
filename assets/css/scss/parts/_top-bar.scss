@@ -13,6 +13,7 @@
     flex-direction: row;
     margin-bottom: 0;
     margin-left: 0;
+    position: relative;
 
     .social-list {
       list-style: none;
@@ -97,6 +98,7 @@
 .navbar-collapse-mobile > ul {
   display: none;
   width: 100%;
+  padding-left: 40px;
 }
 
 .navbar-collapse-mobile.open > ul {

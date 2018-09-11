@@ -1,17 +1,16 @@
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 1000px) {
   .post {
-    width: 48%;
-    max-width: 100%;
+    width: 100%;
     margin: 0 0.9% 1.5%;
-    flex-direction: column;
+    flex-direction: row;
 
     .post-thumbnail {
-      width: 100%;
+      width: 30%;
     }
 
     .post-content {
-      width: 100%;
+      width: 70%;
       .post-title {
         margin: 0 0 5px;
         a {
@@ -23,11 +22,10 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
     position: relative;
-    //display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
@@ -50,7 +48,7 @@
       border-radius: 100%;
       margin-bottom: 10px;
     }
-}
+  }
 
   .content-box {
     padding: 20px 10px;
@@ -60,14 +58,17 @@
     align-items: stretch;
   }
 
-.contact-title, .copyright {
-  display: none;
-}
+  .contact-title, .copyright {
+    display: none;
+  }
 
+  .post {
+
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 600px) {
   .content-box {
     padding: 10px;
   }

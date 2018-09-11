@@ -1060,16 +1060,15 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
   .post {
-    width: 48%;
-    max-width: 100%;
+    width: 100%;
     margin: 0 0.9% 1.5%;
-    flex-direction: column; }
+    flex-direction: row; }
     .post .post-thumbnail {
-      width: 100%; }
+      width: 30%; }
     .post .post-content {
-      width: 100%; }
+      width: 70%; }
       .post .post-content .post-title {
         margin: 0 0 5px; }
         .post .post-content .post-title a {
@@ -1108,7 +1107,7 @@ a.newer-posts:hover {
   .contact-title, .copyright {
     display: none; } }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .content-box {
     padding: 10px; }
 
@@ -1139,7 +1138,8 @@ a.newer-posts:hover {
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    position: relative; }
     .top-bar .navbar .social-list {
       list-style: none;
       margin: 0 0 0 25px;
@@ -1202,7 +1202,8 @@ a.newer-posts:hover {
 
 .navbar-collapse-mobile > ul {
   display: none;
-  width: 100%; }
+  width: 100%;
+  padding-left: 40px; }
 
 .navbar-collapse-mobile.open > ul {
   display: flex;
