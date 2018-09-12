@@ -967,12 +967,15 @@ a.newer-posts:hover {
   position: relative;
   padding: 0;
   margin: 0;
-  max-height: 500px;
   background-color: #fafafa;
   overflow: hidden; }
   .page-cover-image figure {
     position: relative;
-    margin: 0; }
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 500px; }
   .page-cover-image figcaption {
     position: absolute;
     top: 20px;

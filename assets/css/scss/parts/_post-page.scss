@@ -27,12 +27,15 @@
   position: relative;
   padding: 0;
   margin: 0;
-  max-height: 500px;
   background-color: $lightgray;
   overflow: hidden;
   figure {
     position: relative;
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 500px;
   }
   figcaption {
     position: absolute;
