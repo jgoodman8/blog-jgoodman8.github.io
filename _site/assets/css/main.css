@@ -749,7 +749,9 @@ table tfoot td {
   position: relative; }
 
 .post, .article-page {
-  background-color: #fff; }
+  background-color: #fff;
+  max-width: 1200px;
+  margin: auto; }
 
 ::-moz-selection {
   background: rgba(38, 57, 89, 0.8);
@@ -774,6 +776,10 @@ table tfoot td {
     padding: 0; }
     .container ul .page-number {
       color: #489259; }
+
+a {
+  text-decoration: none;
+  color: #5bb66f; }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 .sidebar {
@@ -1109,6 +1115,10 @@ a.newer-posts:hover {
 
   .contact-title, .copyright {
     display: none; } }
+.media-custom {
+  display: flex;
+  margin: auto; }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
   .content-box {

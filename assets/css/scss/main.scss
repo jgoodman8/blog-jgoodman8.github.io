@@ -121,6 +121,8 @@ table tfoot td {
 
 .post, .article-page {
   background-color: #fff;
+  max-width: 1200px;
+  margin: auto;
 }
 
 ::-moz-selection {
@@ -154,6 +156,11 @@ table tfoot td {
       color: $dark-green;
     }
   }
+}
+
+a {
+  text-decoration: none;
+  color: $light-green;
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */

@@ -67,6 +67,11 @@
   }
 }
 
+.media-custom {
+  display: flex;
+  margin: auto;
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
   .content-box {
