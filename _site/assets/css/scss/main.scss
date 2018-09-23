@@ -161,6 +161,12 @@ table tfoot td {
 a {
   text-decoration: none;
   color: $light-green;
+
+  img {
+    display: flex;
+    margin: auto;
+    width: 500px;
+  }
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */

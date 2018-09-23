@@ -52,7 +52,6 @@ I learnt on professional and side projects and other will be issues I picked up 
 ## Stay tuned!
 
 >Music is very important in my life. So I will share with you an small music piece with every post! 
-Today I recommend you "The birth of the Blues" with the great "Rat Pack"! 
+Today I recommend you "The birth of the Blues" with the great "Rat Pack"! Just check de YouTube link.
 
-<iframe class="post-video" width="600" height="360" class="media-custom" src="http://www.youtube.com/embed/nK7tq4RdH1I" frameborder="0" allow="encrypted-media" allowfullscreen>
-</iframe>
+[![Rat Pack - The Bih of the Blues](/dev-blog/assets/img/post_0/rat-pack.jpeg)](http://www.youtube.com/watch?v=nK7tq4RdH1I "Rat Pack - The Bih of the Blues")

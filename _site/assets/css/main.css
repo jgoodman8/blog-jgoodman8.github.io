@@ -780,6 +780,10 @@ table tfoot td {
 a {
   text-decoration: none;
   color: #5bb66f; }
+  a img {
+    display: flex;
+    margin: auto;
+    width: 500px; }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 .sidebar {
