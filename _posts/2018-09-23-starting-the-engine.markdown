@@ -54,5 +54,5 @@ I learnt on professional and side projects and other will be issues I picked up 
 >Music is very important in my life. So I will share with you an small music piece with every post! 
 Today I recommend you "The birth of the Blues" with the great "Rat Pack"! 
 
-<iframe class="post-video" width="600" height="360" class="media-custom" src="http://www.youtube.com/embed/nK7tq4RdH1I" frameborder="0" allowfullscreen>
+<iframe class="post-video" width="600" height="360" class="media-custom" src="http://www.youtube.com/embed/nK7tq4RdH1I" frameborder="0" allow="encrypted-media" allowfullscreen>
 </iframe>
