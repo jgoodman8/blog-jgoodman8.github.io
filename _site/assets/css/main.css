@@ -1121,8 +1121,13 @@ a.newer-posts:hover {
     display: none; } }
 .media-custom {
   display: flex;
-  margin: auto; }
+  margin: auto;
+  width: 480px;
+  height: 250px; }
 
+@media only screen and (max-width: 600px) {
+  .media-custom {
+    width: 100%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
   .content-box {

@@ -11,7 +11,7 @@ In this post, I will try to tell you who I am and what is this blog about. This 
 posts about a couple of technological topics. Bear in mind that this is a side project and I will create more post when 
 I had enough time. The main goal is enjoy and learn together!
 
-<iframe class="media-custom small" src="https://giphy.com/embed/cmzp1CfhZRkMtlCuVj" width="480" height="250" frameBorder="0" allowFullScreen>
+<iframe class="media-custom small" src="https://giphy.com/embed/cmzp1CfhZRkMtlCuVj" frameBorder="0" allowFullScreen>
 </iframe>
 
 ## Why this blog?
@@ -27,7 +27,7 @@ doing this blog for a long time and also it is a way to contribute with the open
 
 >So, Turn it on!!
 
-<iframe class="media-custom" src="https://giphy.com/embed/u2TrRPK8J6Bwc" width="480" height="250" frameBorder="0" allowFullScreen></iframe>
+<iframe class="media-custom" src="https://giphy.com/embed/u2TrRPK8J6Bwc" frameBorder="0" allowFullScreen></iframe>
 
 On the other hand, this is a way of forcing myself to improve the background I have. I believe that there is no better 
 way to upgrade the knowledge that one has to explain something you think you know.
